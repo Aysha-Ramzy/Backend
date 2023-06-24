@@ -17,7 +17,7 @@ public class UserController {
 
     @PostMapping("/user")
     User newUser(@RequestBody User newUser){
-return userRepository.save(newUser);
+return userRepository.save(newUser);//post to frontend
     }
     @GetMapping("/users")
     List<User> getAllUsers(){
