@@ -21,7 +21,7 @@ return userRepository.save(newUser);
     }
     @GetMapping("/users")
     List<User> getAllUsers(){
-return userRepository.findAll();
+return userRepository.findAll(); //get to frontend
     }
 
 }
